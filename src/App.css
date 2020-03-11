@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+.app-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 1;
+}
+
+.header-wrapper {
+  width: 100%;
+  background-color: #cfcfcf;
+  flex: 1 1 1;
+}
+
+.footer-wrapper {
+  width: 100%;
+  background-color: #121212;
+  flex: 1 1 1;
+}
+
+.display-path {
+  height: 60vh;
+}
