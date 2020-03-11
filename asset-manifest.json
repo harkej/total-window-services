@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/total-window-services/static/css/main.d25ed0c2.chunk.css",
+    "main.js": "/total-window-services/static/js/main.291bc98f.chunk.js",
+    "main.js.map": "/total-window-services/static/js/main.291bc98f.chunk.js.map",
+    "runtime-main.js": "/total-window-services/static/js/runtime-main.ab62e954.js",
+    "runtime-main.js.map": "/total-window-services/static/js/runtime-main.ab62e954.js.map",
+    "static/js/2.87deb777.chunk.js": "/total-window-services/static/js/2.87deb777.chunk.js",
+    "static/js/2.87deb777.chunk.js.map": "/total-window-services/static/js/2.87deb777.chunk.js.map",
+    "index.html": "/total-window-services/index.html",
+    "precache-manifest.94977cae30c563de4ae909357cfeb382.js": "/total-window-services/precache-manifest.94977cae30c563de4ae909357cfeb382.js",
+    "service-worker.js": "/total-window-services/service-worker.js",
+    "static/css/main.d25ed0c2.chunk.css.map": "/total-window-services/static/css/main.d25ed0c2.chunk.css.map",
+    "static/js/2.87deb777.chunk.js.LICENSE.txt": "/total-window-services/static/js/2.87deb777.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ab62e954.js",
+    "static/js/2.87deb777.chunk.js",
+    "static/css/main.d25ed0c2.chunk.css",
+    "static/js/main.291bc98f.chunk.js"
+  ]
+}
