@@ -1,0 +1,69 @@
+.landing-section-container {
+    height: 100vh;
+    background-color: #cfcfcf;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 68px;
+}
+
+.landing-section-container .landing-section-banner {
+    position: relative;
+    width: 40%;
+    height: 80%;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.landing-section-container .landing-section-banner:hover {
+    transform: scale(1.1);
+}
+
+.landing-section-container .landing-section-banner img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.landing-section-container #solution-1::after,
+.landing-section-container #solution-2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.8;
+    z-index: 10;
+    border-radius: 8px;
+}
+
+.landing-section-container .landing-section-solution {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #cfcfcf;
+    z-index: 11;
+}
+
+/* .landing-section-container .landing-section-banner:hover .solution-description {
+    z-index: 1000;
+    display: block;
+} */
+
+.landing-section-container .landing-section-solution .solution-title {
+    font-size: 42px;
+    z-index: 11;
+}
+
+.landing-section-container .landing-section-solution .solution-description {
+    width: 80%;
+    text-align: center;
+}

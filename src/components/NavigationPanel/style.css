@@ -1,0 +1,19 @@
+.navigation-panel-container {
+    display: flex;
+    list-style-type: none;
+}
+
+.navigation-panel-container .navigation-item {
+    margin: 0 15px;
+}
+
+.navigation-panel-container .navigation-item a {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.2s ease-in;
+}
+
+.navigation-panel-container .navigation-item a:hover {
+    text-decoration: none;
+    color: #fcfcfc;
+}
