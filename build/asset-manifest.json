@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/total-window-services/static/css/main.25fecd74.chunk.css",
+    "main.js": "/total-window-services/static/js/main.4e2d6e36.chunk.js",
+    "main.js.map": "/total-window-services/static/js/main.4e2d6e36.chunk.js.map",
+    "runtime-main.js": "/total-window-services/static/js/runtime-main.8bbdfdee.js",
+    "runtime-main.js.map": "/total-window-services/static/js/runtime-main.8bbdfdee.js.map",
+    "static/js/2.52324f1e.chunk.js": "/total-window-services/static/js/2.52324f1e.chunk.js",
+    "static/js/2.52324f1e.chunk.js.map": "/total-window-services/static/js/2.52324f1e.chunk.js.map",
+    "index.html": "/total-window-services/index.html",
+    "precache-manifest.900b0040f5eb108e00b1852a269768eb.js": "/total-window-services/precache-manifest.900b0040f5eb108e00b1852a269768eb.js",
+    "service-worker.js": "/total-window-services/service-worker.js",
+    "static/css/main.25fecd74.chunk.css.map": "/total-window-services/static/css/main.25fecd74.chunk.css.map",
+    "static/js/2.52324f1e.chunk.js.LICENSE.txt": "/total-window-services/static/js/2.52324f1e.chunk.js.LICENSE.txt",
+    "static/media/hero-bg.jpg": "/total-window-services/static/media/hero-bg.159de8d1.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8bbdfdee.js",
+    "static/js/2.52324f1e.chunk.js",
+    "static/css/main.25fecd74.chunk.css",
+    "static/js/main.4e2d6e36.chunk.js"
+  ]
+}
