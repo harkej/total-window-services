@@ -78,8 +78,8 @@
     &:active:hover,
     &.active:focus,
     .show > &.dropdown-toggle {
-      background-color: $btn-color !important;
-      color: $fill-font-color;
+      background-color: #277647 !important;
+      color: $btn-color;
       border-color: $btn-color !important;
       .caret{
           border-top-color: $fill-font-color;

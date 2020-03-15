@@ -100,6 +100,11 @@ const ContactForm = () => {
             ) : null}
           </Col>
         </Row>
+        <Row>
+            <Col>
+                <Button className="btn-round" color="neutral" type="button" outline />
+            </Col>
+        </Row>
       </Form>
     </Container>
   );

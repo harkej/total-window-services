@@ -21,7 +21,7 @@
         margin: $navbar-margin-brand;
         padding: $navbar-padding-brand;
         font-size: $font-size-base;
-        color: #277647;
+        color: #edf3a4;
         text-transform: uppercase;
     }
     .navbar-toggler:focus {
@@ -48,7 +48,7 @@
             font-size: $font-size-small;
             text-transform: uppercase;
             font-weight: 600;
-            color: #277647;
+            color: #edf3a4;
 
             p {
               margin: 0px 0px;
@@ -142,7 +142,7 @@
       box-shadow: none;
 
       .navbar-brand {
-        color: $white-color;
+        color: #edf3a4;
       }
 
       .navbar-nav {
@@ -200,21 +200,21 @@
 
 .navbar-transparent, [class*="bg"]{
     .navbar-brand{
-        color: $white-color;
+        color: #edf3a4;
         @include opacity(.9);
 
         &:focus,
         &:hover{
             background-color: transparent;
             @include opacity(1);
-            color: $white-color;
+            color: #edf3a4;
         }
     }
 
     .navbar-nav{
         .nav-item .nav-link:not(.btn){
-            color: $white-color;
-            border-color: $white-color;
+            color: #edf3a4;
+            border-color: #edf3a4;
         }
         .active .nav-link
         .active .nav-link:hover,
@@ -222,7 +222,7 @@
         .nav-item .nav-link:hover,
         .nav-item .nav-link:focus{
             background-color: transparent;
-            color: $white-color;
+            color: #edf3a4;
             @include opacity(1);
         }
         .nav .nav-item a.btn:hover{
@@ -279,5 +279,5 @@
 }
 
 .navbar-primary {
-  background-color: #ffc600;
+  background-color: #277647;
 }

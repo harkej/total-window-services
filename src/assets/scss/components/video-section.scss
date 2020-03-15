@@ -1,7 +1,7 @@
 .video-section-container {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 80px 0;
+  padding: 40px 0 60px;
 
   video {
     width: 100%;
@@ -15,4 +15,19 @@
 .video-section-wrapper {
   width: 100%;
   background-color: $default-bg;
+}
+
+.bg-dark {
+  background-color: #277647;
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image-wrapper {
+  width: 33%;
+  // height: auto;
 }

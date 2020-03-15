@@ -5,11 +5,11 @@ import ContactForm from "../../components/ContactForm";
 import { Card } from "reactstrap";
 
 const styles = {
-  cardStyle: { backgroundColor: "#ffc600", maxWidth: "500px" },
+  cardStyle: { backgroundColor: "#277647", maxWidth: "500px" },
   contactDetailsTitle: {
     fontSize: "16px",
     margin: "10px 0",
-    color: "#277647",
+    color: "#fff",
     fontWeight: 600,
     lineHeight: "10px",
     letterSpacing: "1px"
@@ -17,12 +17,12 @@ const styles = {
   contactText: {
     fontSize: "14px",
     margin: "2px 0",
-    color: "#277647",
+    color: "#fff",
     fontWeight: 400
   },
   highlightText: {
     fontWeight: 600,
-    color: "#277647"
+    color: "#fff"
   }
 };
 
