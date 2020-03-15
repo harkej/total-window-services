@@ -16,21 +16,21 @@ const routes = [
     component: <HomePage />,
     exact: true
   },
-  {
-    id: 2,
-    path: "/our-services",
-    component: <DisplayPath path="/our-solutions" />
-  },
-  {
-    id: 3,
-    path: "/about-us",
-    component: <DisplayPath path="/about-us" />
-  },
-  {
-    id: 4,
-    path: "/contact-us",
-    component: <DisplayPath path="/contact-us" />
-  }
+  // {
+  //   id: 2,
+  //   path: "/our-services",
+  //   component: <DisplayPath path="/our-solutions" />
+  // },
+  // {
+  //   id: 3,
+  //   path: "/about-us",
+  //   component: <DisplayPath path="/about-us" />
+  // },
+  // {
+  //   id: 4,
+  //   path: "/contact-us",
+  //   component: <DisplayPath path="/contact-us" />
+  // }
 ];
 
 function App() {

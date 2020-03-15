@@ -73,6 +73,7 @@ const Footer = () => {
       <div className="footer-copyright">
         © 2020 Copyright: www.totalwindows.com.au
       </div>
+      <div className="powered-by">Powered by Melbourne Technology Solutions</div>
     </>
   );
 };
