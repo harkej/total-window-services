@@ -1,20 +1,49 @@
 .contact-us-container {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 0 0 40px;
     height: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.contact-form-container {
-    /* width: 100% */
+.contact-us-message {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 60px 80px 40px;
+    text-align: center;
+}
+
+.contact-us-message p {
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .map-container {
     margin-top: 40px;
     width: 100%;
     height: auto;
+}
+
+.video-section-wrapper .contact-us-info {
+    display: block;
+    text-align: center;
+    padding: 40px;
+    color: #edf3a4;
+}
+
+.video-section-wrapper .contact-us-info p {
+    margin: 0;
+}
+
+.video-section-wrapper .contact-us-info .contact-ribbon-title {
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.video-section-wrapper .contact-us-info .contact-ribbon-message {
+    font-size: 15px;
 }
 
 @media (max-width: 600px) {

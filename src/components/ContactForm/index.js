@@ -5,6 +5,13 @@ import { ReCaptcha } from "react-recaptcha-google";
 const styles = {
   rowStyle: {
     marginTop: "20px"
+  },
+  headerStyle: {
+    margin: 0,
+    fontWeight: 500
+  },
+  labelStyle: {
+    fontWeight: 500
   }
 };
 
@@ -13,7 +20,6 @@ const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
-  const [displayCaptcha, setDisplayCaptcha] = useState(!!window.grecaptcha);
   const captchaRef = useRef();
 
   useEffect(() => {
@@ -34,12 +40,12 @@ const ContactForm = () => {
   };
 
   return (
-    <Container style={{marginTop: '40px'}}>
-      <h3>Get in touch</h3>
+    <Container style={{marginTop: '10px'}}>
+      <h3 style={styles.headerStyle}>Get in touch</h3>
       <Form>
         <Row style={styles.rowStyle}>
           <Col>
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name" style={styles.labelStyle}>Name</label>
             <Input
               id="name"
               type="text"
@@ -51,7 +57,7 @@ const ContactForm = () => {
         </Row>
         <Row style={styles.rowStyle}>
           <Col>
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email" style={styles.labelStyle}>Email</label>
             <Input
               id="email"
               type="email"
@@ -61,7 +67,7 @@ const ContactForm = () => {
             />
           </Col>
           <Col>
-            <label htmlFor="phone">Phone</label>
+            <label htmlFor="phone" style={styles.labelStyle}>Phone</label>
             <Input
               id="phone"
               type="text"
@@ -78,7 +84,7 @@ const ContactForm = () => {
         </Row>
         <Row style={styles.rowStyle}>
           <Col>
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message" style={styles.labelStyle}>Message</label>
             <Input
               id="message"
               type="textarea"
@@ -104,7 +110,7 @@ const ContactForm = () => {
         </Row>
         <Row>
             <Col>
-                <Button style={{marginTop: '20px'}} className="btn-round" color="default" type="button" outline>
+                <Button style={{marginTop: '20px'}} className="btn-round" color="default" type="button" primary>
                   Submit
                 </Button>
             </Col>

@@ -94,7 +94,7 @@ function ExamplesNavbar() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/contact-us" tag={Link}>
+              <NavLink href="#contact-us">
                 Contact us
               </NavLink>
             </NavItem>

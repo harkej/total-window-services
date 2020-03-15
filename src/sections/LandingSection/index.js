@@ -18,10 +18,6 @@ function LandingSection() {
     }
   });
 
-  const handleVideoClick = () => {
-    console.log("playing video");
-  };
-
   const handleKnowMore = () => {
     console.log("Know more");
   };
@@ -33,7 +29,7 @@ function LandingSection() {
           backgroundImage: `url(${require("../../assets/images/hero-bg.jpg")})`
         }}
         className="page-header"
-        // data-parallax={true}
+        data-parallax={false}
         ref={pageHeader}
       >
         <div className="filter" />
