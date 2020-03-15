@@ -1,6 +1,7 @@
 import React from 'react'
 import LandingSection from '../../sections/LandingSection'
 import VideoSection from '../../sections/VideoSection'
+import ContactUs from '../../sections/ContactUs'
 
 const HomePage = () => {
     return (
@@ -9,7 +10,9 @@ const HomePage = () => {
             <div className="video-section-wrapper">
                 <VideoSection />
             </div>
-            <div style={{height: '100vh'}} />
+            <div className="video-section-wrapper">
+                <ContactUs />
+            </div>
         </div>
     )
 }

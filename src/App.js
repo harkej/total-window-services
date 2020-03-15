@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Switch, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Footer from "./components/footer";
@@ -6,6 +6,7 @@ import "./App.css";
 import "./assets/css/bootstrap.min.css";
 import "./assets/scss/index.scss";
 import Navbar from "./components/Navbar";
+import { loadReCaptcha } from 'react-recaptcha-google';
 
 const DisplayPath = ({ path }) => <p className="display-path">You are visiting {path}</p>;
 
@@ -34,6 +35,9 @@ const routes = [
 ];
 
 function App() {
+  useEffect(() => {
+    loadReCaptcha();
+  }, []);
   return (
     <div className="app-container">
       <div className="header-wrapper">
@@ -41,7 +45,7 @@ function App() {
       </div>
       <Switch>
         {routes.map(item => (
-          <Route path={item.path} exact={item.exact}>
+          <Route key={item.id} path={item.path} exact={item.exact}>
             {item.component}
           </Route>
         ))}

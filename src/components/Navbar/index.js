@@ -85,21 +85,30 @@ function ExamplesNavbar() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/our-work">
-                Our work
+              <NavLink to="/our-solutions" tag={Link}>
+                Our Solutions
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/about-us">
+              <NavLink to="/about-us" tag={Link}>
                 About us
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/contact-us">
+              <NavLink to="/contact-us" tag={Link}>
                 Contact us
               </NavLink>
             </NavItem>
-            {/* <NavItem>
+          </Nav>
+        </Collapse>
+      </Container>
+    </Navbar>
+  );
+}
+
+export default ExamplesNavbar;
+
+/* <NavItem>
               <NavLink
                 data-placement="bottom"
                 href="https://twitter.com/CreativeTim?ref=creativetim"
@@ -142,12 +151,4 @@ function ExamplesNavbar() {
                 <i className="fa fa-github" />
                 <p className="d-lg-none">GitHub</p>
               </NavLink>
-            </NavItem> */}
-          </Nav>
-        </Collapse>
-      </Container>
-    </Navbar>
-  );
-}
-
-export default ExamplesNavbar;
+            </NavItem>  */

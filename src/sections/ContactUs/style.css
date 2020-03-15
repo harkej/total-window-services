@@ -1,0 +1,23 @@
+.contact-us-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form-container {
+    /* width: 100% */
+}
+
+.map-container {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .contact-us-container {
+        display: block;
+    }
+}
