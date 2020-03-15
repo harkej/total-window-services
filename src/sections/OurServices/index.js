@@ -31,6 +31,7 @@ const renderData = [
 const OurServices = () => {
   return (
     <div className="our-services-container">
+      <h3 style={{fontSize: '2.5em', fontWeight: 500, margin: '0 0 40px'}}>Our Services</h3>
       <div className="services-button">
         {renderData.map(item => (
           <Button key={item.id} type="button" success color="success">
