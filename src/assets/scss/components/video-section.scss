@@ -18,7 +18,7 @@
 }
 
 .bg-dark {
-  background-color: #277647;
+  background-color: #277645 !important;
 }
 
 .images-container {
@@ -30,4 +30,62 @@
 .image-wrapper {
   width: 33%;
   // height: auto;
+}
+
+.about-us-container {
+  margin-top: 40px 0 20px;
+  text-align: center;
+  
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .about-us-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 40px;
+  }
+}
+
+.video-desc-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+
+  .video-desc {
+    color: #edf3a4;
+  }
+
+  .video-desc-details,
+  .video-desc-image {
+    width: 45%;
+  }
+
+  .video-desc-image {
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .video-desc-container {
+    display: block;
+    padding: 0 20px;
+
+    .video-desc-details {
+      margin-bottom: 32px;
+    }
+
+    .video-desc-details,
+    .video-desc-image {
+      width: 100%;
+    }
+  }
+
 }

@@ -5,7 +5,11 @@ import ContactForm from "../../components/ContactForm";
 import { Card } from "reactstrap";
 
 const styles = {
-  cardStyle: { backgroundColor: "#277647", maxWidth: "500px" },
+  cardStyle: {
+    backgroundColor: "#277647",
+    maxWidth: document.documentElement.clientWidth > 600 ? "49.5%" : "100%",
+    margin: '0 15px 10px'
+  },
   contactDetailsTitle: {
     fontSize: "16px",
     margin: "10px 0",

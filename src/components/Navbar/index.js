@@ -85,13 +85,13 @@ function ExamplesNavbar() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/our-solutions" tag={Link}>
-                Our Solutions
+              <NavLink to="/about-us" tag={Link}>
+                About us
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/about-us" tag={Link}>
-                About us
+              <NavLink to="/our-services" tag={Link}>
+                Our Services
               </NavLink>
             </NavItem>
             <NavItem>

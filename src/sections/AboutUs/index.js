@@ -23,7 +23,7 @@ const AboutUs = () => {
     },
   ];
   return (
-    <Container style={{ padding: "0 15px" }}>
+    <Container style={{ padding: "40px 15px" }}>
       <div className="images-container">
         {images.map(item => (
             <div className="image-wrapper">

@@ -1,6 +1,7 @@
 .contact-us-container {
     max-width: 1140px;
     margin: 0 auto;
+    padding: 40px 0;
     height: 100%;
     display: flex;
     justify-content: space-between;

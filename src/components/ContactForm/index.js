@@ -13,6 +13,7 @@ const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const [displayCaptcha, setDisplayCaptcha] = useState(!!window.grecaptcha);
   const captchaRef = useRef();
 
   useEffect(() => {
@@ -22,6 +23,7 @@ const ContactForm = () => {
   }, []);
 
   const onLoadRecaptcha = () => {
+    console.log('Loaded recaptcha');
     if (captchaRef.current) {
       captchaRef.current.reset();
     }
@@ -32,7 +34,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Container>
+    <Container style={{marginTop: '40px'}}>
       <h3>Get in touch</h3>
       <Form>
         <Row style={styles.rowStyle}>
@@ -88,13 +90,13 @@ const ContactForm = () => {
         </Row>
         <Row style={styles.rowStyle}>
           <Col>
-            {window.grecaptcha ? (
+            {window.grecaptcha && window.grecaptcha.ready ? (
               <ReCaptcha
                 ref={captchaRef}
                 size="normal"
                 render="explicit"
                 sitekey="6LeGY-EUAAAAAFSgnCaj8VNDEeRCdkmPbxlvzY7y"
-                onloadCallback={onLoadRecaptcha}
+                onLoad={onLoadRecaptcha}
                 verifyCallback={verifyCallback}
               />
             ) : null}
@@ -102,7 +104,9 @@ const ContactForm = () => {
         </Row>
         <Row>
             <Col>
-                <Button className="btn-round" color="neutral" type="button" outline />
+                <Button style={{marginTop: '20px'}} className="btn-round" color="default" type="button" outline>
+                  Submit
+                </Button>
             </Col>
         </Row>
       </Form>

@@ -39,8 +39,12 @@ function LandingSection() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-            <h1 style={{color: '#edf3a4'}}>Specialising in heritage window restorations</h1>
-            <h4 style={{color: '#edf3a4'}}>
+            <h1
+              style={{ color: "#edf3a4", fontSize: "2.6em", fontWeight: 500 }}
+            >
+              Specialising in heritage window restorations
+            </h1>
+            <h4 style={{ color: "#edf3a4", fontSize: "1.35em" }}>
               Total Window Services are leading window and glass suppliers for
               commercial building and renovation projects in Victoria. Not only
               will we source and deliver the right high-quality products for

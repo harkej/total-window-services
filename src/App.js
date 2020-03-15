@@ -6,7 +6,6 @@ import "./App.css";
 import "./assets/css/bootstrap.min.css";
 import "./assets/scss/index.scss";
 import Navbar from "./components/Navbar";
-import { loadReCaptcha } from 'react-recaptcha-google';
 
 const DisplayPath = ({ path }) => <p className="display-path">You are visiting {path}</p>;
 
@@ -19,7 +18,7 @@ const routes = [
   },
   {
     id: 2,
-    path: "/our-solutions",
+    path: "/our-services",
     component: <DisplayPath path="/our-solutions" />
   },
   {
@@ -35,9 +34,6 @@ const routes = [
 ];
 
 function App() {
-  useEffect(() => {
-    loadReCaptcha();
-  }, []);
   return (
     <div className="app-container">
       <div className="header-wrapper">
