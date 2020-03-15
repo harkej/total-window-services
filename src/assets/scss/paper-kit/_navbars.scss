@@ -21,7 +21,7 @@
         margin: $navbar-margin-brand;
         padding: $navbar-padding-brand;
         font-size: $font-size-base;
-        color: $default-color;
+        color: #277647;
         text-transform: uppercase;
     }
     .navbar-toggler:focus {
@@ -48,7 +48,7 @@
             font-size: $font-size-small;
             text-transform: uppercase;
             font-weight: 600;
-            color: $default-color;
+            color: #277647;
 
             p {
               margin: 0px 0px;
@@ -279,5 +279,5 @@
 }
 
 .navbar-primary {
-  background-color: #fed337;
+  background-color: #ffc600;
 }

@@ -51,7 +51,7 @@ function LandingSection() {
             <br />
             <Button
               className="btn-round mr-1"
-              color="neutral"
+              color="default"
               type="button"
               outline
               onClick={handleVideoClick}
@@ -61,7 +61,7 @@ function LandingSection() {
             </Button>
             <Button
               className="btn-round"
-              color="neutral"
+              color="default"
               type="button"
               outline
               onClick={handleKnowMore}

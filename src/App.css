@@ -26,3 +26,8 @@
 .display-path {
   height: 60vh;
 }
+
+.video-section-wrapper {
+  width: 100%;
+  background-color: $default-bg;
+}

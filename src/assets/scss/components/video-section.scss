@@ -1,0 +1,18 @@
+.video-section-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 80px 0;
+
+  video {
+    width: 100%;
+    height: auto;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  }
+}
+
+.video-section-wrapper {
+  width: 100%;
+  background-color: $default-bg;
+}
