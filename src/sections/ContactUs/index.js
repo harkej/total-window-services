@@ -3,6 +3,9 @@ import CustomMap from "../../components/CustomMap";
 import "./style.css";
 import ContactForm from "../../components/ContactForm";
 import { Card } from "reactstrap";
+import { ReactComponent as Landline } from "../../assets/images/landline.svg";
+import { ReactComponent as Mobile } from "../../assets/images/mobile.svg";
+import { ReactComponent as Fax } from "../../assets/images/fax.svg";
 
 const styles = {
   cardStyle: {
@@ -26,7 +29,8 @@ const styles = {
   },
   highlightText: {
     fontWeight: 600,
-    color: "#fff"
+    color: "#fff",
+    marginLeft: ' '
   }
 };
 
@@ -47,7 +51,7 @@ const ContactUs = () => {
             <p style={styles.contactDetailsTitle}>Contact us</p>
             <p style={styles.contactText}>Total Window Services Pty Ltd</p>
             <p style={styles.contactText}>
-              ph{" "}
+              <Landline />
               <a
                 className="contact-link"
                 href="tel:0393316515"
@@ -55,11 +59,15 @@ const ContactUs = () => {
               >
                 03 9331 6515{" "}
               </a>
-              fax{" "}
+            </p>
+            <p style={styles.contactText}>
+              <Fax />
               <span href="fax:0393316530" style={styles.highlightText}>
                 03 9331 6530{" "}
               </span>
-              mobile{" "}
+            </p>
+            <p style={styles.contactText}>
+              <Mobile />
               <a
                 className="contact-link"
                 href="tel:0411475331"
@@ -90,8 +98,8 @@ const ContactUs = () => {
           </div>
           <div className="contact-details" style={{ marginTop: "20px" }}>
             <p style={styles.contactDetailsTitle}>Hours</p>
-            <p style={styles.contactText}>Monday to Friday 9am-5pm</p>
-            <p style={styles.contactText}>Saturday and Sunday CLOSED</p>
+            <p style={styles.contactText}>Monday to Friday: 9am - 5pm</p>
+            <p style={styles.contactText}>Saturday and Sunday: Closed</p>
           </div>
           <div className="map-container">
             <CustomMap />

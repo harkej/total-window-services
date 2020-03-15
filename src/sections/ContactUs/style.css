@@ -7,6 +7,14 @@
     justify-content: space-between;
 }
 
+.contact-us-container p, .contact-us-container a, .contact-us-container span {
+    color: #edf3a4 !important;
+}
+
+.contact-us-container .contact-form-container .text-danger {
+    color: #f5593d  !important;
+}
+
 .contact-us-message {
     max-width: 1140px;
     margin: 0 auto;
@@ -55,4 +63,9 @@
 .contact-link:hover {
     color: #edf3a4 !important;
     transition: all 0.2s ease-in;
+}
+
+.contact-us-container svg {
+    width: 30px;
+    height: 30px;
 }

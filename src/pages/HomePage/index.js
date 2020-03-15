@@ -17,16 +17,16 @@ const imagesList = [
     original: HeritageSite,
     thumbnail: HeritageSite,
     description: "Flinders Street Station",
-    originalAlt: 'Something',
+    originalAlt: 'Flinders Street Station',
     originalTitle: 'Flinders Street Station'
   },
   {
     id: 2,
     original: HeritageWindow,
     thumbnail: HeritageWindow,
-    description: "Some theatre",
-    originalAlt: 'Something',
-    originalTitle: 'Some theatre'
+    description: "A theatre",
+    originalAlt: 'Theatre',
+    originalTitle: 'A theatre'
   },
 ]
 

@@ -12,6 +12,9 @@ const styles = {
   },
   labelStyle: {
     fontWeight: 500
+  },
+  textDanger: {
+    color: 'red !important'
   }
 };
 
@@ -54,7 +57,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Container style={{ marginTop: "10px" }} className="contact-form-container">
+    <Container style={{ marginTop: "10px", color: "#edf3a4" }} className="contact-form-container">
       <h3 style={styles.headerStyle}>Get in touch</h3>
       <Form onSubmit={handleSubmit}>
         <Row style={styles.rowStyle}>
