@@ -79,22 +79,22 @@ function ExamplesNavbar() {
         >
           <Nav navbar>
             <NavItem>
-              <NavLink href="#home">
+              <NavLink href="#home" onClick={() => toggleNavbarCollapse()}>
                 Home
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#about-us">
+              <NavLink href="#about-us" onClick={() => toggleNavbarCollapse()}>
                 About us
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#our-services">
+              <NavLink href="#our-services" onClick={() => toggleNavbarCollapse()}>
                 Our Services
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#contact-us">
+              <NavLink href="#contact-us" onClick={() => toggleNavbarCollapse()}>
                 Contact us
               </NavLink>
             </NavItem>
