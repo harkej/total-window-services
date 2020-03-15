@@ -42,6 +42,8 @@ const VideoSection = () => {
           disablePictureInPicture
           controlsList={["nodownload"]}
           title="Flinders St Station Documentary"
+          poster={HeritageSite}
+          preload="metadata"
         />
       </div>
     </div>

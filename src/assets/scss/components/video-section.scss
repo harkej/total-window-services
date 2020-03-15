@@ -188,7 +188,12 @@
 .work-gallery-container {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 40px 15px;
+
+  .work-gallery-title {
+    margin: 0;
+    font-weight: 500;
+  }
 }
 
 @media (max-width: 900px) {
