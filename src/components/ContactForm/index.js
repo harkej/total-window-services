@@ -20,6 +20,8 @@ const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const [isSubmitEnabled, setSubmitEnabled] = useState(false);
+  const [recaptchaToken, setRecaptchaToken] = useState('');
   const captchaRef = useRef();
 
   useEffect(() => {
@@ -28,24 +30,39 @@ const ContactForm = () => {
     }
   }, []);
 
+  useEffect(() => {
+    if (name && email && phone && message && recaptchaToken) {
+      setSubmitEnabled(true);
+    } else {
+      setSubmitEnabled(false);
+    }
+  }, [name, email, phone, message, recaptchaToken]);
+
   const onLoadRecaptcha = () => {
-    console.log('Loaded recaptcha');
+    console.log("Loaded recaptcha");
     if (captchaRef.current) {
       captchaRef.current.reset();
     }
   };
 
   const verifyCallback = recaptchaToken => {
-    console.log(recaptchaToken, "<= your recaptcha token");
+    setRecaptchaToken(recaptchaToken);
+  };
+
+  const handleSubmit = e => {
+    e.preventDefault();
   };
 
   return (
-    <Container style={{marginTop: '10px'}}>
+    <Container style={{ marginTop: "10px" }} className="contact-form-container">
       <h3 style={styles.headerStyle}>Get in touch</h3>
-      <Form>
+      <Form onSubmit={handleSubmit}>
         <Row style={styles.rowStyle}>
           <Col>
-            <label htmlFor="name" style={styles.labelStyle}>Name</label>
+            <label htmlFor="name" style={styles.labelStyle}>
+              Name
+              <span className="text-danger"> *</span>
+            </label>
             <Input
               id="name"
               type="text"
@@ -57,7 +74,10 @@ const ContactForm = () => {
         </Row>
         <Row style={styles.rowStyle}>
           <Col>
-            <label htmlFor="email" style={styles.labelStyle}>Email</label>
+            <label htmlFor="email" style={styles.labelStyle}>
+              Email
+              <span className="text-danger"> *</span>
+            </label>
             <Input
               id="email"
               type="email"
@@ -67,7 +87,10 @@ const ContactForm = () => {
             />
           </Col>
           <Col>
-            <label htmlFor="phone" style={styles.labelStyle}>Phone</label>
+            <label htmlFor="phone" style={styles.labelStyle}>
+              Phone
+              <span className="text-danger"> *</span>
+            </label>
             <Input
               id="phone"
               type="text"
@@ -84,7 +107,10 @@ const ContactForm = () => {
         </Row>
         <Row style={styles.rowStyle}>
           <Col>
-            <label htmlFor="message" style={styles.labelStyle}>Message</label>
+            <label htmlFor="message" style={styles.labelStyle}>
+              Message
+              <span className="text-danger"> *</span>
+            </label>
             <Input
               id="message"
               type="textarea"
@@ -109,11 +135,19 @@ const ContactForm = () => {
           </Col>
         </Row>
         <Row>
-            <Col>
-                <Button style={{marginTop: '20px'}} className="btn-round" color="default" type="button" primary>
-                  Submit
-                </Button>
-            </Col>
+          <Col>
+            <Button
+              style={{ marginTop: "20px" }}
+              className="btn btn-contact-form"
+              color="default"
+              type="button"
+              outline
+              onClick={handleSubmit}
+              disabled={!isSubmitEnabled}
+            >
+              Submit
+            </Button>
+          </Col>
         </Row>
       </Form>
     </Container>

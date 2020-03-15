@@ -79,17 +79,17 @@ function ExamplesNavbar() {
         >
           <Nav navbar>
             <NavItem>
-              <NavLink to="/" tag={Link}>
+              <NavLink href="#home">
                 Home
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/about-us" tag={Link}>
+              <NavLink href="#about-us">
                 About us
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/our-services" tag={Link}>
+              <NavLink href="#our-services">
                 Our Services
               </NavLink>
             </NavItem>

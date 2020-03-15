@@ -35,9 +35,10 @@ const ContactUs = () => {
     <>
       <div className="contact-us-message">
         <p>
-          We service clients Victoria-wide. If you’d like to learn more about any
-          of our commercial window services, to receive a free quote or to discuss
-          your upcoming building project in more detail, contact our team today.
+          We service clients Victoria-wide. If you’d like to learn more about
+          any of our commercial window services, to receive a free quote or to
+          discuss your upcoming building project in more detail, contact our
+          team today.
         </p>
       </div>
       <div className="contact-us-container">
@@ -46,12 +47,46 @@ const ContactUs = () => {
             <p style={styles.contactDetailsTitle}>Contact us</p>
             <p style={styles.contactText}>Total Window Services Pty Ltd</p>
             <p style={styles.contactText}>
-              ph <span style={styles.highlightText}>03 9331 6515 </span>fax{" "}
-              <span style={styles.highlightText}>03 9331 6530 </span>
-              mobile <span style={styles.highlightText}>0411 475 331</span>
+              ph{" "}
+              <a
+                className="contact-link"
+                href="tel:0393316515"
+                style={styles.highlightText}
+              >
+                03 9331 6515{" "}
+              </a>
+              fax{" "}
+              <span href="fax:0393316530" style={styles.highlightText}>
+                03 9331 6530{" "}
+              </span>
+              mobile{" "}
+              <a
+                className="contact-link"
+                href="tel:0411475331"
+                style={styles.highlightText}
+              >
+                0411 475 331
+              </a>
             </p>
-            <p style={styles.contactText}>office@totalwindows.com.au</p>
-            <p style={styles.contactText}>www.totalwindows.com.au</p>
+            <p style={styles.contactText}>
+              <a
+                style={styles.contactText}
+                className="contact-link"
+                href="mailto:office@totalwindows.com.au"
+              >
+                office@totalwindows.com.au
+              </a>
+            </p>
+            <p style={styles.contactText}>
+              <a
+                className="contact-link"
+                href="www.totalwindows.com.au"
+                target="_blank"
+                style={styles.contactText}
+              >
+                www.totalwindows.com.au
+              </a>
+            </p>
           </div>
           <div className="contact-details" style={{ marginTop: "20px" }}>
             <p style={styles.contactDetailsTitle}>Hours</p>

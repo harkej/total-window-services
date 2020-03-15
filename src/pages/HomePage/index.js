@@ -6,7 +6,7 @@ import AboutUs from "../../sections/AboutUs";
 import ContactRibbon from "../../components/ContactRibbon";
 import OurServices from "../../sections/OurServices";
 import ServicesSummary from "../../sections/ServicesSummary";
-import WorkGallery from "../../sections/WorkGallery";
+// import WorkGallery from "../../sections/WorkGallery";
 import ImageGallery from 'react-image-gallery';
 import * as HeritageSite from '../../assets/images/heritage-site.jpg';
 import * as HeritageWindow from '../../assets/images/heritage-window.jpg';
@@ -34,13 +34,13 @@ const HomePage = () => {
   return (
     <div>
       <LandingSection />
-      <div className="video-section-wrapper">
+      <div id="about-us" className="video-section-wrapper">
         <AboutUs />
       </div>
       <div className="video-section-wrapper bg-dark">
         <VideoSection />
       </div>
-      <div className="video-section-wrapper">
+      <div id="our-services" className="video-section-wrapper">
           <OurServices />
       </div>
       <div className="video-section-wrapper bg-dark">

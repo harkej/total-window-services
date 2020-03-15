@@ -25,6 +25,7 @@ function LandingSection() {
   return (
     <>
       <div
+        id="home"
         style={{
           backgroundImage: `url(${require("../../assets/images/hero-bg.jpg")})`
         }}
