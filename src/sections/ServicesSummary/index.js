@@ -73,7 +73,7 @@ const ServicesSummary = () => {
   return (
     <div className="service-card-container">
       {servicesData.map(item => (
-        <div className="service-card">
+        <div key={item.id} className="service-card">
           <div className="service-card-icon">
             <item.icon />
           </div>

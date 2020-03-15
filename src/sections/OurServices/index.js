@@ -34,7 +34,7 @@ const OurServices = () => {
       <h3 style={{fontSize: '2.5em', fontWeight: 500, margin: '0 0 40px'}}>Our Services</h3>
       <div className="services-button">
         {renderData.map(item => (
-          <Button key={item.id} type="button" success color="success">
+          <Button key={item.id} type="button" success="true" color="success">
             {item.name}
           </Button>
         ))}

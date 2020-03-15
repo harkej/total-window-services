@@ -26,12 +26,12 @@ const AboutUs = () => {
     <Container style={{ padding: "40px 15px" }}>
       <div className="images-container">
         {images.map(item => (
-            <div className="image-wrapper">
+            <div key={item.id} className="image-wrapper">
                 <img
                   key={item.id}
                   src={item.src}
                   alt={item.name}
-                  style={{ width: "100%" }}
+                  style={{ width: "100%", height: "420px" }}
                 />
             </div>
         ))}
