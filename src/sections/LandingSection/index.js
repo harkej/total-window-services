@@ -33,7 +33,7 @@ function LandingSection() {
           backgroundImage: `url(${require("../../assets/images/hero-bg.jpg")})`
         }}
         className="page-header"
-        data-parallax={true}
+        // data-parallax={true}
         ref={pageHeader}
       >
         <div className="filter" />
