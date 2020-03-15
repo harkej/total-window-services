@@ -19,7 +19,10 @@ function LandingSection() {
   });
 
   const handleKnowMore = () => {
-    console.log("Know more");
+    const ourServices = document.querySelector('#our-services');
+    if (ourServices) {
+      window.scrollTo(0, ourServices.offsetTop - 50)
+    }
   };
 
   return (

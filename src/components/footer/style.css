@@ -5,7 +5,7 @@
     color: #fff;
     max-width: 1140px;
     margin: 0 auto;
-    padding: 60px;
+    padding: 30px 60px;
 }
 
 .footer-copyright {
@@ -26,6 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .footer-container-section {
@@ -40,12 +41,27 @@
     display: flex;
     padding-right: 15px;
     font-size: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-social-section a {
     color: #fff;
 }
 
-.footer-social-section a:hover {
+.footer-social-section a:hover,
+.footer-social-section a:active {
     color: #edf3a4;
+}
+
+.footer-copyright {
+    padding: 20px 0;
+}
+
+.footer-social-title {
+    font-weight: 500;
+    color: #edf3a4;
+    padding: 0 16px;
+    margin: 0;
+    font-size: 16px;
 }

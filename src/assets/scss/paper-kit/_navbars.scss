@@ -19,8 +19,9 @@
     .navbar-brand {
         font-weight: $font-weight-bold;
         margin: $navbar-margin-brand;
-        padding: $navbar-padding-brand;
-        font-size: $font-size-base;
+        // padding: $navbar-padding-brand;
+        padding: 10px;
+        font-size: 24px;
         color: #edf3a4;
         text-transform: uppercase;
         text-align: center;
@@ -30,7 +31,7 @@
 
         svg {
           width: auto;
-          height: 40px;
+          height: 50px;
           fill: #edf3a4;
           margin-right: 20px;
 
@@ -60,7 +61,7 @@
             margin: $navbar-margin-a;
             padding: $navbar-padding-a;
             opacity: .8;
-            font-size: $font-size-small;
+            font-size: 14px;
             text-transform: uppercase;
             font-weight: 600;
             color: #edf3a4;

@@ -42,6 +42,17 @@ function ExamplesNavbar() {
       window.removeEventListener("scroll", updateNavbarColor);
     };
   });
+
+  const handleNavigate = (e, elementId) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const element = document.querySelector(elementId);
+    if (element) {
+      window.scrollTo(0, element.offsetTop - 60);
+    }
+    toggleNavbarCollapse();
+  };
+
   return (
     <Navbar
       className={classnames("fixed-top", navbarColor)}
@@ -52,10 +63,9 @@ function ExamplesNavbar() {
         <div className="navbar-translate">
           <NavbarBrand
             data-placement="bottom"
-            to="/"
+            href="#home"
             target=""
             title="Total Window Services"
-            tag={Link}
           >
             <Logo />
             Total Window Services
@@ -79,22 +89,22 @@ function ExamplesNavbar() {
         >
           <Nav navbar>
             <NavItem>
-              <NavLink href="#home" onClick={() => toggleNavbarCollapse()}>
+              <NavLink href="#home" onClick={e => handleNavigate(e, '#home')}>
                 Home
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#about-us" onClick={() => toggleNavbarCollapse()}>
+              <NavLink href="#about-us" onClick={e => handleNavigate(e, '#about-us')}>
                 About us
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#our-services" onClick={() => toggleNavbarCollapse()}>
+              <NavLink href="#our-services" onClick={e => handleNavigate(e, '#our-services')}>
                 Our Services
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#contact-us" onClick={() => toggleNavbarCollapse()}>
+              <NavLink href="#contact-us" onClick={e => handleNavigate(e, '#contact-us')}>
                 Contact us
               </NavLink>
             </NavItem>
