@@ -23,6 +23,21 @@
         font-size: $font-size-base;
         color: #edf3a4;
         text-transform: uppercase;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+          width: auto;
+          height: 40px;
+          fill: #edf3a4;
+          margin-right: 20px;
+
+          path {
+            fill: #edf3a4;
+          }
+        }
     }
     .navbar-toggler:focus {
       outline: none;

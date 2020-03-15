@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// nodejs library that concatenates strings
 import classnames from "classnames";
-
-// reactstrap components
 import {
   Collapse,
   NavbarBrand,
@@ -13,6 +10,7 @@ import {
   Nav,
   Container
 } from "reactstrap";
+import { ReactComponent as Logo } from '../../assets/images/logo2.svg';
 
 function ExamplesNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
@@ -59,6 +57,7 @@ function ExamplesNavbar() {
             title="Total Window Services"
             tag={Link}
           >
+            <Logo />
             Total Window Services
           </NavbarBrand>
           <button
