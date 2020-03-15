@@ -117,10 +117,6 @@
 
   .services-details-container {
     margin: 60px 0 40px;
-
-    &:nth-child(2) {
-      flex-direction: row-reverse;
-    }
   }
 
   .services-details {
@@ -180,10 +176,11 @@
     }
 
     &-name {
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 500;
       text-align: center;
       color: #edf3a4;
+      width: 100%;
     }
   }
 }
@@ -192,4 +189,34 @@
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+@media (max-width: 900px) {
+  .service-card-container {
+    .service-card {
+      width: calc(25% - 20px);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .our-services-container {
+    .services-details {
+      display: block;
+      &-image,
+    &-info {
+      width: 100%;
+    }
+    }
+  }
+
+  .service-card-container {
+    .service-card {
+      width: calc(33% - 20px);
+    }
+  }
+
+  .contact-us-message p {
+    font-size: 16px;
+  }
 }
