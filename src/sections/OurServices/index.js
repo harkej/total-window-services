@@ -47,7 +47,7 @@ const OurServices = () => {
               <p className="services-details-desc">{item.desc}</p>
             </div>
             <div className="services-details-image">
-              <img src={item.img} alt={item.name} />
+              <img src={item.img} alt={item.name} loading="lazy" />
             </div>
           </div>
         ))}

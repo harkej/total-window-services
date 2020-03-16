@@ -32,6 +32,7 @@ const AboutUs = () => {
                   src={item.src}
                   alt={item.name}
                   style={{ width: "100%", height: "420px" }}
+                  loading="lazy"
                 />
             </div>
         ))}

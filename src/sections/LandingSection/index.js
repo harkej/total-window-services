@@ -1,6 +1,12 @@
 import React from "react";
 import { Button, Container } from "reactstrap";
 
+const containerStyle = {
+  display: 'flex',
+  justifyContent: 'start',
+  alignItems: 'center'
+}
+
 function LandingSection() {
   const pageHeader = React.createRef();
 
@@ -19,7 +25,7 @@ function LandingSection() {
   });
 
   const handleKnowMore = () => {
-    const ourServices = document.querySelector('#our-services');
+    const ourServices = document.querySelector('#flinders-station');
     if (ourServices) {
       window.scrollTo(0, ourServices.offsetTop - 50)
     }
@@ -37,8 +43,8 @@ function LandingSection() {
         ref={pageHeader}
       >
         <div className="filter" />
-        <Container>
-          <div className="motto text-center">
+        <Container style={containerStyle}>
+          <div className="motto">
             <h1
               style={{ color: "#edf3a4", fontSize: "2.6em", fontWeight: 500 }}
             >
@@ -72,6 +78,18 @@ function LandingSection() {
             >
               Know more
             </Button>
+          </div>
+          <div className="bg-video">
+            <video
+              width="100%"
+              height="100%"
+              src={require("../../assets/videos/Flinders-Station-Restoration-reduced.m4v")}
+              disablePictureInPicture
+              controlsList={["nodownload"]}
+              autoPlay
+              muted
+              loop
+            />
           </div>
         </Container>
       </div>

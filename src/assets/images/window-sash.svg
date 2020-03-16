@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 	<style type="text/css">
-		.st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+		.st0{fill:none;stroke:rgba(0,0,0,0.6);stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	</style>
-	<path d="M24.8,83.6h50c0.6,0,1-0.4,1-1V18.3c0-0.6-0.4-1-1-1h-50c-0.6,0-1,0.4-1,1v64.3C23.8,83.1,24.3,83.6,24.8,83.6z M25.8,19.3  h48v62.3h-48V19.3z" />
-	<path d="M70.2,21.8H29.4c-0.6,0-1,0.4-1,1V78c0,0.6,0.4,1,1,1h40.8c0.6,0,1-0.4,1-1V22.8C71.2,22.2,70.7,21.8,70.2,21.8z M30.4,58.6  V42.3h18.4v16.3H30.4z M50.8,42.3h18.4v16.3H50.8V42.3z M69.2,40.3H50.8V23.8h18.4V40.3z M48.8,23.8v16.5H30.4V23.8H48.8z M30.4,77  V60.6h38.8V77H30.4z" />
+	<path stroke-width="0px" d="M24.8,83.6h50c0.6,0,1-0.4,1-1V18.3c0-0.6-0.4-1-1-1h-50c-0.6,0-1,0.4-1,1v64.3C23.8,83.1,24.3,83.6,24.8,83.6z M25.8,19.3  h48v62.3h-48V19.3z" />
+	<path stroke-width="0px" d="M70.2,21.8H29.4c-0.6,0-1,0.4-1,1V78c0,0.6,0.4,1,1,1h40.8c0.6,0,1-0.4,1-1V22.8C71.2,22.2,70.7,21.8,70.2,21.8z M30.4,58.6  V42.3h18.4v16.3H30.4z M50.8,42.3h18.4v16.3H50.8V42.3z M69.2,40.3H50.8V23.8h18.4V40.3z M48.8,23.8v16.5H30.4V23.8H48.8z M30.4,77  V60.6h38.8V77H30.4z" />
 </svg>

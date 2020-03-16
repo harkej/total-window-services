@@ -232,3 +232,39 @@
     color: #277645;
   }
 }
+
+.footer-container {
+  svg {
+    &:hover {
+      path, circle {
+        fill: rgba(237,243,164, 0.8);
+      }
+    }
+  }
+}
+
+@keyframes neon3 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #000, 0 0 70px #edf3a4, 0 0 80px #edf3a4, 0 0 100px #edf3a4, 0 0 150px #edf3a4;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #edf3a4, 0 0 35px #edf3a4, 0 0 40px #edf3a4, 0 0 50px #edf3a4, 0 0 75px #edf3a4;
+  }
+}
+
+@keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ffc600;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ffc600;
+  }
+}
+
+.bg-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}

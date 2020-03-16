@@ -18,8 +18,13 @@
     width: 50px;
 }
 
-.footer-container svg path {
+.footer-container svg path,
+.footer-container svg circle {
     fill: #edf3a4;
+}
+
+.footer-container-section:hover {
+    color: rgba(237, 243, 164, 0.8);
 }
 
 .logo-section {
@@ -49,9 +54,9 @@
     color: #fff;
 }
 
-.footer-social-section a:hover,
-.footer-social-section a:active {
+.footer-social-section a:hover {
     color: #edf3a4;
+    animation: neon5 1.5s ease-in-out infinite alternate;
 }
 
 .footer-copyright {

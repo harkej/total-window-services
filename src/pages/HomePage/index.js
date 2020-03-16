@@ -37,7 +37,7 @@ const HomePage = () => {
       <div id="about-us" className="video-section-wrapper">
         <AboutUs />
       </div>
-      <div className="video-section-wrapper bg-dark">
+      <div id="flinders-station" className="video-section-wrapper bg-dark">
         <VideoSection />
       </div>
       <div id="our-services" className="video-section-wrapper">

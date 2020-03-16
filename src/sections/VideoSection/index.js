@@ -1,5 +1,6 @@
 import React from "react";
 import HeritageSite from "../../assets/images/heritage-site.jpg";
+import VideoThumbnail from "../../assets/images/video-thumbnail.png";
 
 const VideoSection = () => {
   return (
@@ -31,7 +32,7 @@ const VideoSection = () => {
           </p>
         </div>
         <div className="video-desc-image">
-          <img src={HeritageSite} alt="Flinders St Station" />
+          <img src={HeritageSite} alt="Flinders St Station" loading="lazy" />
         </div>
       </div>
       <div>
@@ -42,7 +43,7 @@ const VideoSection = () => {
           disablePictureInPicture
           controlsList={["nodownload"]}
           title="Flinders St Station Documentary"
-          poster={HeritageSite}
+          poster={VideoThumbnail}
           preload="metadata"
         />
       </div>
