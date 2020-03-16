@@ -55,7 +55,7 @@ function ExamplesNavbar() {
 
   return (
     <Navbar
-      className={classnames("fixed-top", navbarColor)}
+      className={classnames("fixed-top", navbarColor, "navbar-width")}
       color-on-scroll="300"
       expand="lg"
     >

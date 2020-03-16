@@ -297,3 +297,18 @@
 .navbar-primary {
   background-color: #277647;
 }
+
+@media (max-width: 900px) {
+  .navbar {
+    .navbar-brand {
+      font-size: 12px !important;
+      svg {
+        height: 30px;
+      }
+    }
+  }
+}
+
+.navbar-width {
+  width: 100vw !important;
+}

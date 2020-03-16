@@ -35,9 +35,9 @@ function LandingSection() {
     <>
       <div
         id="home"
-        style={{
-          backgroundImage: `url(${require("../../assets/images/hero-bg.jpg")})`
-        }}
+        // style={{
+        //   backgroundImage: `url(${require("../../assets/images/hero-bg.jpg")})`
+        // }}
         className="page-header"
         data-parallax={false}
         ref={pageHeader}
