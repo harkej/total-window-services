@@ -2,10 +2,10 @@ import React from "react";
 import { Button, Container } from "reactstrap";
 
 const containerStyle = {
-  display: 'flex',
-  justifyContent: 'start',
-  alignItems: 'center'
-}
+  display: "flex",
+  justifyContent: "start",
+  alignItems: "center"
+};
 
 function LandingSection() {
   const pageHeader = React.createRef();
@@ -25,9 +25,9 @@ function LandingSection() {
   });
 
   const handleKnowMore = () => {
-    const ourServices = document.querySelector('#flinders-station');
+    const ourServices = document.querySelector("#flinders-station");
     if (ourServices) {
-      window.scrollTo(0, ourServices.offsetTop - 50)
+      window.scrollTo(0, ourServices.offsetTop - 50);
     }
   };
 
@@ -79,19 +79,19 @@ function LandingSection() {
               Know more
             </Button>
           </div>
-          <div className="bg-video">
-            <video
-              width="100%"
-              height="100%"
-              src={require("../../assets/videos/Flinders-Station-Restoration-reduced.m4v")}
-              disablePictureInPicture
-              controlsList={["nodownload"]}
-              autoPlay
-              muted
-              loop
-            />
-          </div>
         </Container>
+        <div className="bg-video">
+          <video
+            width="100%"
+            height="100%"
+            src={require("../../assets/videos/bg-video.m4v")}
+            disablePictureInPicture
+            controlsList={["nodownload"]}
+            autoPlay
+            muted
+            loop
+          />
+        </div>
       </div>
     </>
   );

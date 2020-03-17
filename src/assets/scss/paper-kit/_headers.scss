@@ -43,13 +43,13 @@
     .motto{
         color: #FFFFFF;
         text-align: center;
-        z-index: 2;
+        z-index: 4;
         position: relative;
     }
 
     .filter{
       &::after{
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.7);
         content: "";
         display: block;
         height: 100%;
@@ -57,7 +57,7 @@
         position: absolute;
         top: 0;
         width: 100%;
-        z-index: 2;
+        z-index: 3;
       }
       &.filter-primary::after{
           background-color: rgba($filter-primary, 0.5);

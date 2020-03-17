@@ -10,6 +10,8 @@ import ServicesSummary from "../../sections/ServicesSummary";
 import ImageGallery from 'react-image-gallery';
 import * as HeritageSite from '../../assets/images/heritage-site.jpg';
 import * as HeritageWindow from '../../assets/images/heritage-window.jpg';
+import { WorkGallery } from './data';
+import workGallery from "../../sections/WorkGallery/data";
 
 const imagesList = [
   {
@@ -31,6 +33,19 @@ const imagesList = [
 ]
 
 const HomePage = () => {
+  const getGalleryData = () => {
+    return Object.keys(workGallery).reduce((acc, key) => {
+      const gallery = workGallery[key].map(item => ({
+        original: item,
+        thumbnail: item,
+        description: key,
+        originalAlt: key,
+        originalTitle: key
+      }));
+      return [...acc, ...gallery];
+    }, []);
+  };
+
   return (
     <div>
       <LandingSection />
@@ -48,7 +63,7 @@ const HomePage = () => {
       </div>
       <div className="video-section-wrapper">
           {/* <WorkGallery /> */}
-          <ImageGallery items={imagesList} autoPlay />
+          <ImageGallery items={getGalleryData()} autoPlay lazyLoad slideDuration={1000} />
       </div>
       <div id="contact-us" className="video-section-wrapper bg-dark">
         <ContactRibbon
