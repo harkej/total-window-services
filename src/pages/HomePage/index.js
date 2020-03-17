@@ -38,7 +38,7 @@ const HomePage = () => {
       const gallery = workGallery[key].map(item => ({
         original: item,
         thumbnail: item,
-        description: key,
+        description: key.replace('_', ' '),
         originalAlt: key,
         originalTitle: key
       }));

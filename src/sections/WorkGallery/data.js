@@ -37,10 +37,11 @@ import SM2 from "../../assets/images/Safety_Matches/2.jpg";
 
 import TRIBECA1 from "../../assets/images/Tribeca/1.jpg";
 import TRIBECA2 from "../../assets/images/Tribeca/2.jpg";
+
 const workGallery = {
   UOM: [UOM1, UOM2, UOM3, UOM4, UOM5, UOM6, UOM7, UOM8, UOM9, UOM10, UOM11],
   Abbotsford_Convent: [AC],
-  BM: [BM1, BM2, BM3],
+  'B&M': [BM1, BM2, BM3],
   Brash: [BRASH1, BRASH2],
   GJ_Cole: [GJC1, GJC2],
   Myer: [MYER1, MYER2, MYER3, MYER4],
