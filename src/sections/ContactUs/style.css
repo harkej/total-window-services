@@ -8,7 +8,7 @@
 }
 
 .contact-us-container p, .contact-us-container a, .contact-us-container span {
-    color: #edf3a4 !important;
+    color: #F1DAB2 !important;
 }
 
 .contact-us-container .contact-form-container .text-danger {
@@ -37,7 +37,7 @@
     display: block;
     text-align: center;
     padding: 40px;
-    color: #edf3a4;
+    color: #F1DAB2;
 }
 
 .video-section-wrapper .contact-us-info p {
@@ -61,7 +61,7 @@
 }
 
 .contact-link:hover {
-    color: #edf3a4 !important;
+    color: #F1DAB2 !important;
     transition: all 0.2s ease-in;
 }
 

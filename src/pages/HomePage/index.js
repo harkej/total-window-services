@@ -1,4 +1,5 @@
 import React from "react";
+import ImageGallery from 'react-image-gallery';
 import LandingSection from "../../sections/LandingSection";
 import VideoSection from "../../sections/VideoSection";
 import ContactUs from "../../sections/ContactUs";
@@ -6,31 +7,7 @@ import AboutUs from "../../sections/AboutUs";
 import ContactRibbon from "../../components/ContactRibbon";
 import OurServices from "../../sections/OurServices";
 import ServicesSummary from "../../sections/ServicesSummary";
-// import WorkGallery from "../../sections/WorkGallery";
-import ImageGallery from 'react-image-gallery';
-import * as HeritageSite from '../../assets/images/heritage-site.jpg';
-import * as HeritageWindow from '../../assets/images/heritage-window.jpg';
-import { WorkGallery } from './data';
 import workGallery from "../../sections/WorkGallery/data";
-
-const imagesList = [
-  {
-    id: 1,
-    original: HeritageSite,
-    thumbnail: HeritageSite,
-    description: "Flinders Street Station",
-    originalAlt: 'Flinders Street Station',
-    originalTitle: 'Flinders Street Station'
-  },
-  {
-    id: 2,
-    original: HeritageWindow,
-    thumbnail: HeritageWindow,
-    description: "A theatre",
-    originalAlt: 'Theatre',
-    originalTitle: 'A theatre'
-  },
-]
 
 const HomePage = () => {
   const getGalleryData = () => {

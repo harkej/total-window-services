@@ -18,7 +18,7 @@
 }
 
 .bg-dark {
-  background-color: #277645 !important;
+  background-color: #205A41 !important;
 }
 
 .images-container {
@@ -57,7 +57,7 @@
   margin-bottom: 32px;
 
   .video-desc {
-    color: #edf3a4;
+    color: #F1DAB2;
   }
 
   .video-desc-details,
@@ -112,6 +112,7 @@
 
     button {
       width: 32.5%;
+      color: #F1DAB2;
     }
   }
 
@@ -162,7 +163,7 @@
 
   .service-card {
     width: calc(16.66% - 20px);
-    // background-color: #edf3a4;
+    // background-color: #F1DAB2;
     margin: 40px 0 40px 20px;
 
     &-icon {
@@ -179,7 +180,7 @@
       font-size: 15px;
       font-weight: 500;
       text-align: center;
-      color: #edf3a4;
+      color: #F1DAB2;
       width: 100%;
     }
   }
@@ -228,8 +229,8 @@
 
 .contact-form-container .btn-contact-form {
   &:hover {
-    background-color: #edf3a4 !important;
-    color: #277645;
+    background-color: #F1DAB2 !important;
+    color: #205A41;
   }
 }
 
@@ -245,10 +246,10 @@
 
 @keyframes neon3 {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #000, 0 0 70px #edf3a4, 0 0 80px #edf3a4, 0 0 100px #edf3a4, 0 0 150px #edf3a4;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #000, 0 0 70px #F1DAB2, 0 0 80px #F1DAB2, 0 0 100px #F1DAB2, 0 0 150px #F1DAB2;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #edf3a4, 0 0 35px #edf3a4, 0 0 40px #edf3a4, 0 0 50px #edf3a4, 0 0 75px #edf3a4;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #F1DAB2, 0 0 35px #F1DAB2, 0 0 40px #F1DAB2, 0 0 50px #F1DAB2, 0 0 75px #F1DAB2;
   }
 }
 
@@ -281,4 +282,25 @@
   width: auto;
   height: auto;
   transform: translate(-50%, -50%);
+}
+
+.image-gallery {
+  &-thumbnails {
+    img {
+      height: 60px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active-nav {
+  font-weight: 700;
+  border-bottom: 2px solid #F1DAB2;
 }

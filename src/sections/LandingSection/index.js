@@ -4,25 +4,27 @@ import { Button, Container } from "reactstrap";
 const containerStyle = {
   display: "flex",
   justifyContent: "start",
-  alignItems: "center"
+  alignItems: "flex-end",
+  height: '80vh',
+  paddingLeft: 0,
 };
 
 function LandingSection() {
   const pageHeader = React.createRef();
 
-  React.useEffect(() => {
-    if (window.innerWidth <= 990) {
-      const updateScroll = () => {
-        let windowScrollTop = window.pageYOffset / 3;
-        pageHeader.current.style.transform =
-          "translate3d(0," + windowScrollTop + "px,0)";
-      };
-      window.addEventListener("scroll", updateScroll);
-      return function cleanup() {
-        window.removeEventListener("scroll", updateScroll);
-      };
-    }
-  });
+  // React.useEffect(() => {
+  //   if (window.innerWidth <= 990) {
+  //     const updateScroll = () => {
+  //       let windowScrollTop = window.pageYOffset / 3;
+  //       pageHeader.current.style.transform =
+  //         "translate3d(0," + windowScrollTop + "px,0)";
+  //     };
+  //     window.addEventListener("scroll", updateScroll);
+  //     return function cleanup() {
+  //       window.removeEventListener("scroll", updateScroll);
+  //     };
+  //   }
+  // });
 
   const handleKnowMore = () => {
     const ourServices = document.querySelector("#flinders-station");
@@ -39,18 +41,24 @@ function LandingSection() {
         //   backgroundImage: `url(${require("../../assets/images/hero-bg.jpg")})`
         // }}
         className="page-header"
-        data-parallax={true}
         ref={pageHeader}
       >
         <div className="filter" />
         <Container style={containerStyle}>
           <div className="motto">
             <h1
-              style={{ color: "#edf3a4", fontSize: "2.6em", fontWeight: 500 }}
+              style={{ color: "#F1DAB2", fontSize: "2.4em", fontWeight: 700 }}
             >
               Specialising in heritage window restorations
             </h1>
-            <h4 style={{ color: "#edf3a4", fontSize: "1.35em" }}>
+            <h4
+              style={{
+                color: "#F1DAB2",
+                fontSize: "1.35em",
+                lineHeight: "1.45em",
+                fontWeight: 500
+              }}
+            >
               Total Window Services are leading window and glass suppliers for
               commercial building and renovation projects in Victoria. Not only
               will we source and deliver the right high-quality products for
@@ -59,16 +67,6 @@ function LandingSection() {
               properties and heritage site
             </h4>
             <br />
-            {/* <Button
-              className="btn-round mr-1"
-              color="default"
-              type="button"
-              outline
-              onClick={handleVideoClick}
-            >
-              <i className="fa fa-play" />
-              Watch video
-            </Button> */}
             <Button
               className="btn-round"
               color="default"

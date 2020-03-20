@@ -14,7 +14,7 @@ const styles = {
     fontWeight: 500
   },
   textDanger: {
-    color: 'red !important'
+    color: "red !important"
   }
 };
 
@@ -24,7 +24,7 @@ const ContactForm = () => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [isSubmitEnabled, setSubmitEnabled] = useState(false);
-  const [recaptchaToken, setRecaptchaToken] = useState('');
+  const [recaptchaToken, setRecaptchaToken] = useState("");
   const captchaRef = useRef();
 
   useEffect(() => {
@@ -57,7 +57,10 @@ const ContactForm = () => {
   };
 
   return (
-    <Container style={{ marginTop: "10px", color: "#edf3a4" }} className="contact-form-container">
+    <Container
+      style={{ marginTop: "10px", color: "#F1DAB2" }}
+      className="contact-form-container"
+    >
       <h3 style={styles.headerStyle}>Get in touch</h3>
       <Form onSubmit={handleSubmit}>
         <Row style={styles.rowStyle}>
@@ -125,7 +128,9 @@ const ContactForm = () => {
         </Row>
         <Row style={styles.rowStyle}>
           <Col>
-            {window.grecaptcha && window.grecaptcha.ready ? (
+            {window.grecaptcha &&
+            window.grecaptcha.ready &&
+            window.grecaptcha.render ? (
               <ReCaptcha
                 ref={captchaRef}
                 size="normal"

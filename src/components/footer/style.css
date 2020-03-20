@@ -20,7 +20,7 @@
 
 .footer-container svg path,
 .footer-container svg circle {
-    fill: #edf3a4;
+    fill: #F1DAB2;
 }
 
 .footer-container-section:hover {
@@ -36,7 +36,7 @@
 
 .footer-container-section {
     padding-left: 10px;
-    color: #edf3a4;
+    color: #F1DAB2;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -55,7 +55,7 @@
 }
 
 .footer-social-section a:hover {
-    color: #edf3a4;
+    color: #F1DAB2;
     animation: neon5 1.5s ease-in-out infinite alternate;
 }
 
@@ -65,7 +65,7 @@
 
 .footer-social-title {
     font-weight: 500;
-    color: #edf3a4;
+    color: #F1DAB2;
     padding: 0 16px;
     margin: 0;
     font-size: 16px;
@@ -73,9 +73,18 @@
 
 .powered-by {
     text-align: center;
-    background-color: #277645;
-    color: #edf3a4;
+    background-color: #205A41;
+    color: #F1DAB2;
     font-size: 14px;
     font-weight: 500;
     padding: 10px 0;
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        padding: 60px 15px;
+    }
+    .footer-container a.nav-link {
+        padding: 8px 12px;
+    }
 }

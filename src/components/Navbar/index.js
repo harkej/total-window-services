@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import classnames from "classnames";
 import {
@@ -10,11 +10,12 @@ import {
   Nav,
   Container
 } from "reactstrap";
-import { ReactComponent as Logo } from '../../assets/images/logo.svg';
+import { ReactComponent as Logo } from "../../assets/images/logo.svg";
 
 function ExamplesNavbar() {
-  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
-  const [navbarCollapse, setNavbarCollapse] = React.useState(false);
+  const [navbarColor, setNavbarColor] = useState("navbar-transparent");
+  const [navbarCollapse, setNavbarCollapse] = useState(false);
+  const [activeNav, setActiveNav] = useState("#home");
 
   const toggleNavbarCollapse = () => {
     setNavbarCollapse(!navbarCollapse);
@@ -46,12 +47,38 @@ function ExamplesNavbar() {
   const handleNavigate = (e, elementId) => {
     e.preventDefault();
     e.stopPropagation();
+    setActiveNav(elementId);
     const element = document.querySelector(elementId);
     if (element) {
       window.scrollTo(0, element.offsetTop - 60);
     }
-    toggleNavbarCollapse();
+    if (document.documentElement.clientWidth < 600) {
+      toggleNavbarCollapse();
+    }
   };
+
+  const navList = [
+    {
+      id: 1,
+      elementId: '#home',
+      name: 'Home',
+    },
+    {
+      id: 2,
+      elementId: '#about-us',
+      name: 'About us',
+    },
+    {
+      id: 3,
+      elementId: '#our-services',
+      name: 'Our services',
+    },
+    {
+      id: 4,
+      elementId: '#contact-us',
+      name: 'Contact us',
+    },
+  ];
 
   return (
     <Navbar
@@ -88,26 +115,18 @@ function ExamplesNavbar() {
           isOpen={navbarCollapse}
         >
           <Nav navbar>
-            <NavItem>
-              <NavLink href="#home" onClick={e => handleNavigate(e, '#home')}>
-                Home
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#about-us" onClick={e => handleNavigate(e, '#about-us')}>
-                About us
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#our-services" onClick={e => handleNavigate(e, '#our-services')}>
-                Our Services
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="#contact-us" onClick={e => handleNavigate(e, '#contact-us')}>
-                Contact us
-              </NavLink>
-            </NavItem>
+            {navList.map(item => (
+              <NavItem>
+                <NavLink
+                  key={item.id}
+                  className={activeNav === item.elementId ? "active-nav" : ""}
+                  href={item.elementId}
+                  onClick={e => handleNavigate(e, item.elementId)}
+                >
+                  {item.name}
+                </NavLink>
+              </NavItem>
+            ))}
           </Nav>
         </Collapse>
       </Container>

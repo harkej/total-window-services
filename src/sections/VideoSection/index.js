@@ -9,7 +9,7 @@ const VideoSection = () => {
         <div className="video-desc-details">
           <h2
             style={{
-              color: "#edf3a4",
+              color: "#F1DAB2",
               marginBottom: "32px",
               fontWeight: 300,
               marginTop: 0
@@ -36,7 +36,7 @@ const VideoSection = () => {
         </div>
       </div>
       <div>
-        <label className="video-title">Restoring Flinders St Station Documentary</label>
+        {/* <label className="video-title">Restoring Flinders St Station Documentary</label> */}
         <video
           controls
           src={require("../../assets/videos/Flinders-Station-Restoration-reduced.m4v")}

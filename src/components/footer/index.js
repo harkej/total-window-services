@@ -29,7 +29,6 @@ const Footer = () => {
               title="Follow us on Twitter"
             >
               <i className="fa fa-twitter" />
-              <p className="d-lg-none">Twitter</p>
             </NavLink>
             <NavLink
               data-placement="bottom"
@@ -38,7 +37,6 @@ const Footer = () => {
               title="Like us on Facebook"
             >
               <i className="fa fa-facebook-square" />
-              <p className="d-lg-none">Facebook</p>
             </NavLink>
             <NavLink
               data-placement="bottom"
@@ -47,7 +45,6 @@ const Footer = () => {
               title="Follow us on Instagram"
             >
               <i className="fa fa-instagram" />
-              <p className="d-lg-none">Instagram</p>
             </NavLink>
             <NavLink
               data-placement="bottom"
@@ -56,7 +53,6 @@ const Footer = () => {
               title="Follow on LinkedIn"
             >
               <i className="fa fa-linkedin" />
-              <p className="d-lg-none">LinkedIn</p>
             </NavLink>
             <NavLink
               data-placement="bottom"
@@ -65,7 +61,6 @@ const Footer = () => {
               title="Subscribe on YouTube"
             >
               <i className="fa fa-youtube" />
-              <p className="d-lg-none">YouTube</p>
             </NavLink>
           </div>
         </div>

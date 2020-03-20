@@ -9,7 +9,7 @@ import { ReactComponent as Fax } from "../../assets/images/fax.svg";
 
 const styles = {
   cardStyle: {
-    backgroundColor: "#277647",
+    backgroundColor: "#205A41",
     maxWidth: document.documentElement.clientWidth > 600 ? "49.5%" : "100%",
     margin: "0 15px 10px"
   },
