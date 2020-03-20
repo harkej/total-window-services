@@ -34,7 +34,7 @@ const AboutUs = () => {
               style={{
                 width: "100%",
                 height:
-                  document.documentElement.clientWidth > 600 ? "420px" : "300px"
+                  document.documentElement.clientWidth > 600 ? "420px" : "240px"
               }}
               loading="lazy"
             />

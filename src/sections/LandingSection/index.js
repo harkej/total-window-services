@@ -1,16 +1,10 @@
 import React from "react";
 import { Button, Container } from "reactstrap";
-
-const containerStyle = {
-  display: "flex",
-  justifyContent: "start",
-  alignItems: "flex-end",
-  height: '80vh',
-  paddingLeft: 0,
-};
+import useWindowSize from "../../hooks/useWindowSize";
 
 function LandingSection() {
   const pageHeader = React.createRef();
+  const { width } = useWindowSize();
 
   // React.useEffect(() => {
   //   if (window.innerWidth <= 990) {
@@ -31,6 +25,14 @@ function LandingSection() {
     if (ourServices) {
       window.scrollTo(0, ourServices.offsetTop - 50);
     }
+  };
+
+  const containerStyle = {
+    display: "flex",
+    justifyContent: "start",
+    alignItems: width > 600 ? "flex-end" : "center",
+    height: '80vh',
+    paddingLeft: 0,
   };
 
   return (

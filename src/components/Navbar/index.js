@@ -19,7 +19,7 @@ function ExamplesNavbar() {
 
   const toggleNavbarCollapse = () => {
     setNavbarCollapse(!navbarCollapse);
-    document.documentElement.classList.toggle("nav-open");
+    document.querySelector('#myNav').classList.toggle("hide-nav-overlay");
   };
 
   React.useEffect(() => {
@@ -60,77 +60,87 @@ function ExamplesNavbar() {
   const navList = [
     {
       id: 1,
-      elementId: '#home',
-      name: 'Home',
+      elementId: "#home",
+      name: "Home"
     },
     {
       id: 2,
-      elementId: '#about-us',
-      name: 'About us',
+      elementId: "#about-us",
+      name: "About us"
     },
     {
       id: 3,
-      elementId: '#our-services',
-      name: 'Our services',
+      elementId: "#our-services",
+      name: "Our services"
     },
     {
       id: 4,
-      elementId: '#contact-us',
-      name: 'Contact us',
-    },
+      elementId: "#contact-us",
+      name: "Contact us"
+    }
   ];
 
   return (
-    <Navbar
-      className={classnames("fixed-top", navbarColor, "navbar-width")}
-      color-on-scroll="300"
-      expand="lg"
-    >
-      <Container>
-        <div className="navbar-translate">
-          <NavbarBrand
-            data-placement="bottom"
-            href="#home"
-            target=""
-            title="Total Window Services"
+    <>
+      <Navbar
+        className={classnames("fixed-top", navbarColor, "navbar-width")}
+        color-on-scroll="300"
+        expand="lg"
+      >
+        <Container>
+          <div className="navbar-translate">
+            <NavbarBrand
+              data-placement="bottom"
+              href="#home"
+              target=""
+              title="Total Window Services"
+            >
+              <Logo />
+              Total Window Services
+            </NavbarBrand>
+            <button
+              aria-expanded={navbarCollapse}
+              className={classnames("navbar-toggler navbar-toggler", {
+                toggled: navbarCollapse
+              })}
+              onClick={toggleNavbarCollapse}
+            >
+              <span className="navbar-toggler-bar bar1" />
+              <span className="navbar-toggler-bar bar2" />
+              <span className="navbar-toggler-bar bar3" />
+            </button>
+          </div>
+          <Collapse
+            className="justify-content-end"
+            navbar
+            isOpen={navbarCollapse}
           >
-            <Logo />
-            Total Window Services
-          </NavbarBrand>
-          <button
-            aria-expanded={navbarCollapse}
-            className={classnames("navbar-toggler navbar-toggler", {
-              toggled: navbarCollapse
-            })}
-            onClick={toggleNavbarCollapse}
-          >
-            <span className="navbar-toggler-bar bar1" />
-            <span className="navbar-toggler-bar bar2" />
-            <span className="navbar-toggler-bar bar3" />
-          </button>
+            <Nav navbar>
+              {navList.map(item => (
+                <NavItem>
+                  <NavLink
+                    key={item.id}
+                    className={activeNav === item.elementId ? "active-nav" : ""}
+                    href={item.elementId}
+                    onClick={e => handleNavigate(e, item.elementId)}
+                  >
+                    {item.name}
+                  </NavLink>
+                </NavItem>
+              ))}
+            </Nav>
+          </Collapse>
+        </Container>
+      </Navbar>
+      <div id="myNav" className="nav-overlay hide-nav-overlay">
+        <div onClick={toggleNavbarCollapse} className="overlay-content">
+          <a href="#home">Home</a>
+          <a href="#about-us">About us</a>
+          <a href="#our-services">Our services</a>
+          <a href="#contact-us">Contact us</a>
         </div>
-        <Collapse
-          className="justify-content-end"
-          navbar
-          isOpen={navbarCollapse}
-        >
-          <Nav navbar>
-            {navList.map(item => (
-              <NavItem>
-                <NavLink
-                  key={item.id}
-                  className={activeNav === item.elementId ? "active-nav" : ""}
-                  href={item.elementId}
-                  onClick={e => handleNavigate(e, item.elementId)}
-                >
-                  {item.name}
-                </NavLink>
-              </NavItem>
-            ))}
-          </Nav>
-        </Collapse>
-      </Container>
-    </Navbar>
+      </div>
+    </>
   );
 }
 

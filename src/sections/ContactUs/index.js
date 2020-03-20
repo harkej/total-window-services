@@ -6,13 +6,9 @@ import { Card } from "reactstrap";
 import { ReactComponent as Landline } from "../../assets/images/landline.svg";
 import { ReactComponent as Mobile } from "../../assets/images/mobile.svg";
 import { ReactComponent as Fax } from "../../assets/images/fax.svg";
+import useWindowSize from "../../hooks/useWindowSize";
 
 const styles = {
-  cardStyle: {
-    backgroundColor: "#205A41",
-    maxWidth: document.documentElement.clientWidth > 600 ? "49.5%" : "100%",
-    margin: "0 15px 10px"
-  },
   contactDetailsTitle: {
     fontSize: "16px",
     margin: "15px 0",
@@ -35,6 +31,14 @@ const styles = {
 };
 
 const ContactUs = () => {
+  const { width } = useWindowSize();
+
+  const cardStyle = {
+    backgroundColor: "#205A41",
+    maxWidth: width > 600 ? "49.5%" : "100%",
+    margin: "0 15px 10px"
+  };
+
   return (
     <>
       <div className="contact-us-message">
@@ -46,7 +50,7 @@ const ContactUs = () => {
         </p>
       </div>
       <div className="contact-us-container">
-        <Card body inverse style={styles.cardStyle}>
+        <Card body inverse style={cardStyle}>
           <div className="contact-details">
             <p style={styles.contactDetailsTitle}>Contact us</p>
             <p style={styles.contactText}>Total Window Services Pty Ltd</p>
@@ -105,7 +109,7 @@ const ContactUs = () => {
             <CustomMap />
           </div>
         </Card>
-        <Card body inverse style={styles.cardStyle}>
+        <Card body inverse style={cardStyle}>
           <div className="contact-form-container">
             <ContactForm />
           </div>
