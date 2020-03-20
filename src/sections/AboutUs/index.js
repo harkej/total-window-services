@@ -20,21 +20,25 @@ const AboutUs = () => {
       id: 3,
       src: IMG3,
       name: "About us"
-    },
+    }
   ];
   return (
     <Container style={{ padding: "40px 15px" }}>
       <div className="images-container">
         {images.map(item => (
-            <div key={item.id} className="image-wrapper">
-                <img
-                  key={item.id}
-                  src={item.src}
-                  alt={item.name}
-                  style={{ width: "100%", height: "420px" }}
-                  loading="lazy"
-                />
-            </div>
+          <div key={item.id} className="image-wrapper">
+            <img
+              key={item.id}
+              src={item.src}
+              alt={item.name}
+              style={{
+                width: "100%",
+                height:
+                  document.documentElement.clientWidth > 600 ? "420px" : "300px"
+              }}
+              loading="lazy"
+            />
+          </div>
         ))}
       </div>
       <div className="about-us-container">
